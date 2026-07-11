@@ -18,7 +18,7 @@ function Interview() {
       const token = localStorage.getItem("token");
 
       const res = await axios.post(
-        "http://localhost:5000/api/interview/generate",
+        "http://import.meta.env.VITE_API_URL/api/interview/generate",
         {
           role,
           experience,

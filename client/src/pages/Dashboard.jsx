@@ -16,7 +16,7 @@ function Dashboard() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/interview/all",
+        "http://import.meta.env.VITE_API_URL/api/interview/all",
         {
           headers: {
             Authorization: `Bearer ${token}`,
