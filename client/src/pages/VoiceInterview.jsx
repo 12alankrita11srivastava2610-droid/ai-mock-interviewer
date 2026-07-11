@@ -74,7 +74,7 @@ function VoiceInterview() {
         );
 
       const res = await axios.post(
-        "http://import.meta.env.VITE_API_URL/api/interview/submit",
+        `${import.meta.env.VITE_API_URL}/api/interview/submit`,
         {
           interviewId,
           answers: finalAnswers.map(
