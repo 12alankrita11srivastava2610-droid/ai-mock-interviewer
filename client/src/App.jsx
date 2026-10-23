@@ -1,5 +1,6 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -36,6 +37,7 @@ import Dashboard from "./pages/Dashboard";
   element={<Dashboard />}
 />
       </Routes>
+      <Analytics />
     </BrowserRouter>
   );
 }
